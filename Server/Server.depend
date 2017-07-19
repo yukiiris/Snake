@@ -41,12 +41,13 @@
 
 1500461107 /home/moltres/github/C/Server/snake.h
 
-1500475649 source:/home/moltres/github/Snake/Server/main.c
+1500478365 source:/home/moltres/github/Snake/Server/main.c
 	<stdio.h>
 	<stdlib.h>
 	"function.h"
 
-1500467711 /home/moltres/github/Snake/Server/function.h
+1500489343 /home/moltres/github/Snake/Server/function.h
+	"queue.h"
 
 1500418299 source:/home/moltres/github/Snake/Server/queue.c
 	<stdio.h>

@@ -16,7 +16,7 @@
 #define BUFLEN 1024
 #define PORT 6666
 #define LISTNUM 20
-
+void thread(linkqueue_st* queue);
 
 int server(void)
 {
@@ -119,9 +119,11 @@ int server(void)
                     if(len > 0)
                     {
                         //printf("msg:%s\n",buf);
+                        pthread_mutex_lock(&mut);
                         linkqueue_enqueue(queue, buf[0]);
                         //send(newfd, server, strlen(server), 0);
                         //send(newfd, buf, strlen(buf), 0);
+                        pthread_mutex_unlock(&mut);
                     }
 
                     else{

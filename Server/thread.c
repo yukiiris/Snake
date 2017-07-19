@@ -1,12 +1,14 @@
 #include <stdio.h>
 #include "queue.h"
+#include <pthread.h>
 #include "snake.h"
+#include "function.h"
 
 void thread(linkqueue_st* queue)
 {
     while(1)
     {
-
+        pthread_mutex_lock(&mut);
         int value = 0;
         int *p = &value;
         //printf("%d", linkqueue_isempty(queue));
@@ -16,6 +18,7 @@ void thread(linkqueue_st* queue)
             key_input(value);
         }
         //sleep(1);
+        pthread_mutex_unlock(&mut);
     }
 }
 

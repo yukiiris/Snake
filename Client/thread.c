@@ -5,7 +5,7 @@ void thread(linkqueue_st* queue)
 {
     while(1)
     {
-
+        pthread_mutex_lock(&mut);
         int value = 0;
         int *p = &value;
         linkqueue_isempty(queue);
@@ -14,7 +14,7 @@ void thread(linkqueue_st* queue)
             linkqueue_dequeue(queue, p);
             key_input(value);
         }
-        sleep(1);
+        pthread_mutex_unlock(&mut);
     }
 }
 

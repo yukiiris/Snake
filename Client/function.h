@@ -4,6 +4,7 @@
 #include <arpa/inet.h>
 #include <netinet/in.h>
 #include <sys/types.h>
+#include <pthread.h>
 #include "snake.h"
 
 #define BUFLEN 1024
@@ -19,6 +20,7 @@ struct timeval tv;
 int retval, maxfd;
 
 //void thread(void);
+pthread_mutex_t mut;
 void init_keyboard(void);
 int kbhit();
 int client(void);

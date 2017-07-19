@@ -101,7 +101,9 @@ int client(void)
                     if(len > 0)
                     {
                         //printf("msg:%s\n",buf);
+                        pthread_mutex_lock(&mut);
                         linkqueue_enqueue(queue, buf[0]);
+                        pthread_mutex_unlock(&mut);
                         //send(newfd, server, strlen(server), 0);
                         //send(newfd, buf, strlen(buf), 0);
                     }

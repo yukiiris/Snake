@@ -44,11 +44,12 @@
 
 1500468896 /home/moltres/github/C/Client/queue.h
 
-1500401230 source:/home/moltres/github/Snake/Client/main.c
+1500488876 source:/home/moltres/github/Snake/Client/main.c
 	<stdio.h>
 	<stdlib.h>
+	"function.h"
 
-1500483519 source:/home/moltres/github/Snake/Client/client.c
+1500489569 source:/home/moltres/github/Snake/Client/client.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -66,16 +67,17 @@
 	"snake.h"
 	"queue.h"
 
-1500477456 /home/moltres/github/Snake/Client/function.h
+1500488742 /home/moltres/github/Snake/Client/function.h
 	<sys/socket.h>
 	<arpa/inet.h>
 	<netinet/in.h>
 	<sys/types.h>
+	<pthread.h>
 	"snake.h"
 
 1500468896 /home/moltres/github/Snake/Client/queue.h
 
-1500483093 source:/home/moltres/github/Snake/Client/thread.c
+1500488948 source:/home/moltres/github/Snake/Client/thread.c
 	"function.h"
 	"queue.h"
 
