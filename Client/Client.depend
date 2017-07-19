@@ -1,0 +1,46 @@
+# depslib dependency file v1.0
+1500401230 source:/home/moltres/github/C/Client/main.c
+	<stdio.h>
+	<stdlib.h>
+
+1500468643 source:/home/moltres/github/C/Client/client.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<errno.h>
+	<arpa/inet.h>
+	<netinet/in.h>
+	<sys/types.h>
+	<unistd.h>
+	<sys/time.h>
+	<pthread.h>
+	"function.h"
+	<termios.h>
+	<assert.h>
+	<curses.h>
+
+1500411074 /home/moltres/github/C/Client/function.h
+	<sys/socket.h>
+	<arpa/inet.h>
+	<netinet/in.h>
+	<sys/types.h>
+
+1500410267 source:/home/moltres/github/C/Client/thread.c
+
+1500409799 source:/home/moltres/github/C/Client/kbhit.c
+	<stdio.h>
+	<termios.h>
+
+1500468386 source:/home/moltres/github/C/Client/snake.c
+	<curses.h>
+	<stdlib.h>
+	<unistd.h>
+	<time.h>
+
+1500468866 source:/home/moltres/github/C/Client/queue.c
+	<stdio.h>
+	<stdlib.h>
+	"queue.h"
+
+1500468896 /home/moltres/github/C/Client/queue.h
+
