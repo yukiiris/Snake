@@ -41,3 +41,46 @@
 
 1500461107 /home/moltres/github/C/Server/snake.h
 
+1500475649 source:/home/moltres/github/Snake/Server/main.c
+	<stdio.h>
+	<stdlib.h>
+	"function.h"
+
+1500467711 /home/moltres/github/Snake/Server/function.h
+
+1500418299 source:/home/moltres/github/Snake/Server/queue.c
+	<stdio.h>
+	<stdlib.h>
+	"queue.h"
+
+1500415543 /home/moltres/github/Snake/Server/queue.h
+
+1500461183 source:/home/moltres/github/Snake/Server/snake.c
+	<curses.h>
+	<stdlib.h>
+	<unistd.h>
+	<time.h>
+
+1500475625 source:/home/moltres/github/Snake/Server/thread.c
+	<stdio.h>
+	"queue.h"
+	"snake.h"
+
+1500461107 /home/moltres/github/Snake/Server/snake.h
+
+1500475576 source:/home/moltres/github/Snake/Server/server.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<errno.h>
+	<sys/socket.h>
+	<arpa/inet.h>
+	<netinet/in.h>
+	<sys/types.h>
+	<unistd.h>
+	<curses.h>
+	<sys/time.h>
+	"function.h"
+	"queue.h"
+	"snake.h"
+

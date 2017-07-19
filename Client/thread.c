@@ -1,24 +1,20 @@
+#include "function.h"
 #include "queue.h"
 
-void thread(int sockfd, linkqueue_st *queue)
+void thread(linkqueue_st* queue)
 {
-    char buf[1];
-    int len;
-    while (1)
+    while(1)
     {
-        bzero(buf,1);
-        len = recv(sockfd,buf,1,0);
-        if(len > 0)
-        {
-            linkqueue_enqueue(queue, buf[0]);
-        }
-        else{
-            if(len < 0 )
-                printf("failed\n");
-            else
 
-        break;
+        int value = 0;
+        int *p = &value;
+        linkqueue_isempty(queue);
+        if (linkqueue_isempty(queue) != 1)
+        {
+            linkqueue_dequeue(queue, p);
+            key_input(value);
         }
+        sleep(1);
     }
 }
 
@@ -27,6 +23,6 @@ void snake(void)
     while (1)
     {
         play();
-        sleep(0.5);
+        sleep(2);
     }
 }

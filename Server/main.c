@@ -5,7 +5,7 @@
 int main(int argc, char **argv) {
 
 	init();
-	draw(0);
+    draw(0);
 	draw(1);
 	server();
 	return 0;

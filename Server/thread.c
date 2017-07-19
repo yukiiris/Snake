@@ -24,6 +24,6 @@ void snake(void)
     while (1)
     {
         play();
-        sleep(0.5);
+        sleep(2);
     }
 }

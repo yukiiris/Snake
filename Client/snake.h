@@ -10,6 +10,6 @@ void play();
 void judge();
 int pause_time(int, int *);
 void d_e();
-void key_input();
+void key_input(int ch);
 
 #endif // SNAKE_H_INCLUDED
